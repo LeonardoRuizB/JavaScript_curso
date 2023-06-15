@@ -1114,7 +1114,7 @@ $("document").ready(function() {
         }
     };
 
-    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&appid=894f6f5402daff831f3acae434e70925&units=metric");
+    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&appid=&units=metric");
     xhttp.send();
 
     // ------------------------ AULA 51 - AJAX / RESPONSE ------------------------
@@ -1137,7 +1137,7 @@ $("document").ready(function() {
                 callback(this.responseText);
             } 
         };
-        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&appid=894f6f5402daff831f3acae434e70925&units=metric");
+        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&appid=&units=metric");
         xhttp.send();
     }
 
@@ -1147,7 +1147,7 @@ $("document").ready(function() {
 
     // Padrão
     $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=894f6f5402daff831f3acae434e70925&units=metric",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=&units=metric",
         type: "GET",
         dataType: "json"
     }).done(function(data) {
@@ -1158,7 +1158,7 @@ $("document").ready(function() {
 
     // Jeito que eu fiz
     $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=894f6f5402daff831f3acae434e70925&units=metric",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=&units=metric",
         type: "GET",
         dataType: "json"
     }).done(function(data) {
@@ -1178,7 +1178,7 @@ $("document").ready(function() {
 
     function pegar_dados(callback) {
         $.ajax({
-            url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=894f6f5402daff831f3acae434e70925&units=metric",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=&units=metric",
             type: "GET",
             dataType: "json"
         }).done(function(data) {
